@@ -177,3 +177,11 @@ Like depicted above, in order to publicly expose a Lambda function, we need an A
 4. The `codeowner` approves the PR and `squash merges` that PR into `master` branch. 
 5. Github Actions workflow will deploy the updated lambda function code within a minute. 
 6. Verify changes using https://35vitaoru1.execute-api.us-east-1.amazonaws.com/feature-flag
+
+### Examples
+ 
+| Request | Description |
+|-|-|
+| `https://35vitaoru1.execute-api.us-east-1.amazonaws.com/feature-flag?env=imp` | Returns all flags in tier IMP. |
+| `https://35vitaoru1.execute-api.us-east-1.amazonaws.com/feature-flag?env=dev&tag=SF` | Returns all flags in DEV, associated with project SF. |
+| `https://35vitaoru1.execute-api.us-east-1.amazonaws.com/feature-flag?env=dev&name=MVP_ENABLED` | Return the flag `MVP_ENABLED` in DEV. |
