@@ -2,6 +2,6 @@ name	type	tags	description	prod	imp	dev	dev-pre
 ENABLE_OAUTH	boolean	AUTH,SUB		true	true	true	true
 submissionWindowOpenDate	date	SF,SUB		"2020-04-01T13:22:30"	"2020-04-01T13:22:30"	"2020-04-01T13:22:30"	"2020-04-01T13:22:30"
 ADMIN_CLAIMS_OPEN_TIME	string	SUB		"2017,2018,2019|2020-05-22T10:00:00-04:00"	"2017,2018,2019|2020-05-22T10:00:00-04:00"	"2017,2018,2019|2020-05-22T10:00:00-04:00"	"2017,2018,2019|2020-05-22T10:00:00-04:00"
-SUBMISSION_WINDOW	date-range	SUB	A timed flag shows that the submissions window is open	2020-07-20T10:04:00 till 2020-07-20T10:06:00	2020-03-01T13:22:30 till 2020-05-06T10:00:00	2020-03-01T13:22:30 till 2020-05-06T10:00:00	2020-03-01T14:22:30 till 2020-05-06T10:00:00
+SUBMISSION_WINDOW	date-range	SUB	A timed flag shows that the submissions window is open	2020-07-21T10:04:00 till 2020-07-21T13:00:00	2020-03-01T13:22:30 till 2020-05-06T10:00:00	2020-03-01T13:22:30 till 2020-05-06T10:00:00	2020-03-01T14:22:30 till 2020-05-06T10:00:00
 MVP_ENABLED	date-range	SUB	Specifies the date on which MVP are accepted.	2022-01-02T10:30:00 till undefined	2022-01-02T10:30:00 till undefined	2022-01-02T10:30:00 till undefined	2022-01-02T10:30:00 till undefined
 REJECT_XML	date-range	SUB	Specifies the date on which XML support is deprecated.	2019-01-02T10:30:00 till undefined	2019-01-02T10:30:00 till undefined	2019-01-02T10:30:00 till undefined	2019-01-02T10:30:00 till undefined
