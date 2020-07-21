@@ -1,0 +1,61 @@
+[
+  {
+    "name": "ENABLE_OAUTH",
+    "value": true,
+    "type": "boolean",
+    "tags": [
+      "AUTH",
+      "SUB"
+    ],
+    "description": ""
+  },
+  {
+    "name": "submissionWindowOpenDate",
+    "value": "2020-04-01T13:22:30",
+    "type": "date",
+    "tags": [
+      "SUB",
+      "SF"
+    ],
+    "description": ""
+  },
+  {
+    "name": "ADMIN_CLAIMS_OPEN_TIME",
+    "value": "2017,2018,2019|2020-05-22T10:00:00-04:00",
+    "type": "string",
+    "tags": [
+      "SUB"
+    ],
+    "description": ""
+  },
+  {
+    "name": "SUBMISSION_WINDOW",
+    "value": {
+      "start": "2020-03-01T13:22:30",
+      "end": "2020-05-06T10:00:00"
+    },
+    "type": "date-range",
+    "tags": [
+      "SUB"
+    ],
+    "description": "A timed flag shows that the submissions window is open"
+  },
+  {
+    "name": "MVP_ENABLED",
+    "value": {
+      "start": "2022-01-02T10:30:00"
+    },
+    "type": "date-range",
+    "tags": ["SUB"],
+    "description": "Specifies the date on which MVP are accepted."
+  },
+  {
+    "name": "REJECT_XML",
+    "value": {
+      "start": "2019-01-02T10:30:00"
+    },
+    "type": "date-range",
+    "tags": ["SUB"],
+    "description": "Specifies the date on which XML support is deprecated."
+  }
+]

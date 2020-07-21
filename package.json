@@ -1,0 +1,26 @@
+{
+  "name": "feature-flag",
+  "version": "1.0.0",
+  "description": "feature flags POC",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node ./validate.js",
+    "tsv": "node ./tsv.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bijujoseph/feature-flag.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bijujoseph/feature-flag/issues"
+  },
+  "homepage": "https://github.com/bijujoseph/feature-flag#README",
+  "dependencies": {
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.19"
+  }
+}
