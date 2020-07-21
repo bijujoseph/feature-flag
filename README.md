@@ -11,7 +11,7 @@ John King:
 > Feature flag values can later be changed, as part of a release process, causing new behavior to take effect. 
 > In other words, it separates **Deployments** from **Releases**.
 
-_**Thumb Rule** - :+1: the ones you do not anticipate `QA's` toggling in `IMP`, are not qualified as `feature flags`._ 
+_**Thumb Rule** - :+1: the ones you do not anticipate `QAs'` toggle in `IMP`, are not qualified as `feature flags`._ 
 Mostly such flags are system configuration variables (a.k. environment variables).
 
 ## Responsibilities
@@ -167,7 +167,7 @@ Outside of QA testing, the probability of these feature flags getting changed is
 Anyway, every network client must be prepared for server failure, must ensure that `default values are not destructive` (_example `DATA_SUBMISSION_OPEN` flag if not available, must default to "`false`", which will not accept data from its clients_)
  
 # Reference Implementation
-Like depicted above, in order to publicly expose a Lambda function, we need an API gateway. Kong will ultimately be the API gateway that we will be using in PROD, but for the purposes of this POC, I will be an existing AWS API Gateway configured outside of this deployment process. 
+Like depicted above, in order to publicly expose a Lambda function, we need an API gateway. Kong will ultimately be the API gateway that we will be using in PROD, but for the purposes of this POC, I will be using an existing AWS API Gateway configured outside of this deployment process. 
 
 ## Scenario: QA engineer wants to update a feature flag. 
 
