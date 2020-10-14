@@ -1,4 +1,4 @@
-// allowed date format & timezone
+// allowed date format & timezones
 const DATE_FORMAT = 'YYYY-MM-DDTHH:mm:ss';
 const TIME_ZONE = 'America/New_York';
 
