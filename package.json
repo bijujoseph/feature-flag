@@ -21,6 +21,6 @@
     "moment": "^2.27.0"
   },
   "devDependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.21"
   }
 }
