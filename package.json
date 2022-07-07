@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/bijujoseph/feature-flag#README",
   "dependencies": {
-    "moment": "^2.27.0"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "lodash": "^4.17.19"
