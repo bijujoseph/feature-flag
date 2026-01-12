@@ -101,5 +101,9 @@ let comparisonChecks = (env1, env2, errors, flags1, flags2) => {
        }
    });
 };
-validate();
-// module.exports.validate = validate;
+// Only run validation if this is the main module
+if (require.main === module) {
+    validate();
+}
+
+module.exports = { validate, consitencyCheck, comparisonChecks };

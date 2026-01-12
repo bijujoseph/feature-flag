@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "validate": "node ./validate.js",
-    "tsv": "node ./tsv.js"
+    "tsv": "node ./tsv.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "moment": "^2.27.0"
   },
   "devDependencies": {
+    "jest": "^30.2.0",
     "lodash": "^4.17.19"
   }
 }
