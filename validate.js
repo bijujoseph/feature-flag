@@ -31,7 +31,7 @@ let validate = () => {
     constants.envs.forEach(env => allFlags[env] = require(`./flags/${env}.json`));
 
     // check for dups in every file
-    constants.envs.forEach(env => consitencyCheck(env, errors, allFlags[env]));
+    constants.envs.forEach(env => consistencyCheck(env, errors, allFlags[env]));
 
     //compare the flags between dev and other envs for match
     constants.envs.filter(env => env !== 'dev')
@@ -45,7 +45,7 @@ let validate = () => {
 };
 
 // checks if the flag data is syntactically right.
-let consitencyCheck = (env, errors, flags) => {
+let consistencyCheck = (env, errors, flags) => {
     // ensure there are no dups
     let names = flags.map(ff => ff.name);
     let distinctNames = [...new Set(names)];
@@ -101,5 +101,9 @@ let comparisonChecks = (env1, env2, errors, flags1, flags2) => {
        }
    });
 };
-validate();
-// module.exports.validate = validate;
+// Only run validation if this is the main module
+if (require.main === module) {
+    validate();
+}
+
+module.exports = { validate, consistencyCheck, comparisonChecks };
