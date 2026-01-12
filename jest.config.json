@@ -1,0 +1,11 @@
+{
+  "testEnvironment": "node",
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "/terraform/",
+    "/generated/"
+  ],
+  "testMatch": [
+    "**/*.test.js"
+  ]
+}

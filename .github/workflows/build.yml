@@ -27,6 +27,9 @@ jobs:
       - name: Install NPM Packages
         run: npm ci
 
+      - name: Run Tests
+        run: npm test
+
       - name: Validate Flags
         run: npm run validate
 
